@@ -1,0 +1,46 @@
+.goto{
+    position: absolute;
+    top: 50%;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    color: #c6cbef;
+    /* background-color: #b492b2; */
+}
+.engage{
+    float: left;
+    width: 20%;
+    padding: 0%;
+}
+
+.challenge_reward{
+    float: left;
+    width: 20%;
+    padding: 0%;
+}
+
+.chat{
+    float: left;
+    width: 20%;
+    padding: 0%;
+}
+
+.connect{
+    float: left;
+    width: 20%;
+    padding: 0%;
+}
+
+.sign_up{
+    float: left;
+    width: 20%;
+    padding: 0%;
+}
+
+figcaption{
+    text-align: center;
+    color: #b492b2;
+
+}

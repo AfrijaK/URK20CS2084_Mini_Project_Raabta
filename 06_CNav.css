@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #F6E4F7;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding-bottom: 2%;
+    background-color: #B5BBEA;
+    z-index: 5;
+}
+
+.slide{
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    background-color: #B5BBEA;
+    transition: 1s ease;
+    transform: translateX(-250px);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: white;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+
+label ul li{
+    list-style: none;
+}
+
+label ul li a{
+    color:#F6E4F7;
+    font-weight: 500;
+    padding: 5px 0;
+    display:block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.8s ease-out;
+}
+
+label ul li:hover a{
+    color: #F6E4F7;
+    background-color: #B492B2;
+}
+label ul li a i{
+    width: 40px;
+    text-align: center;
+}
+
+input{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.toggle{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 35px;
+    left: 25px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #B5BBEA;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #F6E4F7;
+    border-radius: 50px;
+    transition: 0.7s ease;
+}
+
+.toggle .top_line{
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.toggle .middle_line{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.toggle .bottom_line{
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input:checked ~ .toggle .top_line{
+    left:2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+input:checked ~ .toggle .bottom_line{
+    left:2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.Logo{
+    position: absolute;
+    top: 2%;
+    left: 15px;
+    right: 80%;
+    margin-left:45%;
+    margin-right:70%;
+    width:60%;
+    height:60%;
+    display: flex;
+}
+
+.Logo img{
+    width: auto;
+    height: auto;
+}
+
+nav .Raabta{
+    padding-left: 15%;
+}
